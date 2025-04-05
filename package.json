@@ -1,23 +1,41 @@
 {
   "name": "chn-ui",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "clue-hunt-next UI project",
   "scripts": {
-    "rbl": "rollup -c"
+    "rbl": "rollup -c",
+    "sb": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "storybook": "storybook dev -p 6006"
   },
   "author": "Aleksandar Stojanovic",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.0.0",
+    "@storybook/addon-essentials": "^8.6.12",
+    "@storybook/addon-interactions": "^8.6.12",
+    "@storybook/addon-onboarding": "^8.6.12",
+    "@storybook/blocks": "^8.6.12",
+    "@storybook/react": "^8.6.12",
+    "@storybook/react-vite": "^8.6.12",
+    "@storybook/test": "^8.6.12",
     "@types/react": "^19.0.0",
+    "@types/rollup-plugin-peer-deps-external": "^2",
+    "postcss": "^8.5.3",
+    "postcss-custom-media": "^11.0.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rollup": "^3.14.0",
     "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^8.6.12",
     "tslib": "^2.8.1",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vite": "^6.2.5"
   },
   "peerDependencies": {
     "react": "^19.0.0",

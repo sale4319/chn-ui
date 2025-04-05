@@ -1,3 +1,4 @@
 /node_modules
 .yarn/install-state.gz
 /dist
+*storybook.log
