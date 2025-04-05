@@ -2,20 +2,31 @@
   "name": "chn-ui",
   "version": "0.0.1",
   "description": "clue-hunt-next UI project",
-  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "rbl": "rollup -c"
   },
   "author": "Aleksandar Stojanovic",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
     "@types/react": "^19.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "rollup": "^3.14.0",
+    "rollup-plugin-dts": "^5.1.1",
+    "tslib": "^2.8.1",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
-  }
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
 }
